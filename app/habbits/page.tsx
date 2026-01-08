@@ -36,11 +36,11 @@ export default function Page() {
   });
 
   const habbitList = [
-    { name: "Books", minimum: "2 Hours", points: 15 },
-    { name: "Software", minimum: "2 Hours", points: 30 },
-    { name: "Hardware", minimum: "2 Hours", points: 15 },
-    { name: "Admissions", minimum: "2 Hours", points: 15 },
-    { name: "Study", minimum: "1 Hour", points: 15 },
+    { name: "Books", minimum: "1 Bussiness chp and 20 pages Ecnomics", points:25  },
+    { name: "Admissions", minimum: "CityU and PolyU?", points:20  },
+    { name: "BNA", minimum: "unsupervised Learning and ch4 half", points:15  },
+    { name: "Electronics", minimum: "Short Content and long content", points:25  },
+    { name: "Computer", minimum: "Typescript", points: 15 },
   ];
 
   const getDocsFireStore = async () => {
