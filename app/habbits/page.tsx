@@ -36,11 +36,12 @@ export default function Page() {
   });
 
   const habbitList = [
-    { name: "Books", minimum: "1 Bussiness chp and 20 pages Ecnomics", points:25  },
-    { name: "Admissions", minimum: "CityU and PolyU?", points:20  },
-    { name: "BNA", minimum: "unsupervised Learning and ch4 half", points:15  },
-    { name: "Electronics", minimum: "Short Content and long content", points:25  },
-    { name: "Computer", minimum: "Typescript", points: 15 },
+    { name: "Books", minimum: "1 Bussiness chp and 20 pages Ecnomics", points:12  },
+    { name: "Admissions", minimum: "CityU and PolyU? and More uni", points:15  },
+    { name: "BNA", minimum: "Ch5 anf ch6 half", points:15  },
+    { name: "Electronics", minimum: "Editing and Practice" , points:15  },
+    { name: "Computer", minimum: "CS50 lecture#2", points: 15 },
+    {name:"A Level",minimun:"Vectors and Logorithms and Polynomials",points:28}
   ];
 
   const getDocsFireStore = async () => {
