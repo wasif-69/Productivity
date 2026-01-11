@@ -37,11 +37,11 @@ export default function Page() {
 
   const habbitList = [
     { name: "Books", minimum: "1 Bussiness chp and 20 pages Ecnomics", points:12  },
-    { name: "Admissions", minimum: "CityU and PolyU? and More uni", points:15  },
-    { name: "BNA", minimum: "Ch5 anf ch6 half", points:15  },
+    { name: "Admissions", minimum: "PolyU? and More uni", points:15  },
+    { name: "BNA", minimum: "Practice on Exmaple and leetcode ", points:15  },
     { name: "Electronics", minimum: "Editing and Practice" , points:15  },
-    { name: "Computer", minimum: "CS50 lecture#2", points: 15 },
-    {name:"A Level",minimun:"Vectors and Logorithms and Polynomials",points:28}
+    { name: "Computer", minimum: "CS50 lecture#2 half and AIMate", points: 15 },
+    {name:"A Level",minimun:"Vectors and Logrithms ",points:28}
   ];
 
   const getDocsFireStore = async () => {
