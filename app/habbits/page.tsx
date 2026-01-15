@@ -37,11 +37,10 @@ export default function Page() {
 
   const habbitList = [
     { name: "Books", minimum: "2 0_1 chapters and 30 pages Ecnomics", points:15  },
-    { name: "Admissions", minimum: "Turkish uni", points:5  },
+    { name: "Admissions", minimum: "Turkish uni", points:8  },
     { name: "BNA", minimum: "Practice on compitition and leetcode 5 questions ", points:20  },
     { name: "Electronics", minimum: "Editing and Practice" , points:25  },
-    { name: "Computer", minimum: "CS50 lecture#4 Half", points:10  },
-    { name: "AI", minimum: "Attensions video and AImate", points:5  },
+    { name: "AI", minimum: "Attensions video and AImate", points:12  },
     { name:"A Level",minimun:"Vectors and Logrithms ",points:20}
   ];
 
