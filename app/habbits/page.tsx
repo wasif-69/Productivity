@@ -36,12 +36,12 @@ export default function Page() {
   });
 
   const habbitList = [
-    { name: "Books", minimum: "Last 0_1 chapter 1 Bussiness chapter ", points:10  },
+    { name: "Books", minimum: "2 Bussiness chapter ", points:13  },
     { name: "Admissions", minimum: "Turkish uni and polyu uni", points:25  },
-    { name: "BNA", minimum: "Practice on 1 compitition and leetcode 2 questions and team and physics  ", points:15  },
-    { name: "Electronics", minimum: "one video edit for short and Practice" , points:15  },
-    { name: "AI", minimum: "CS50 Lecture#4 Half & OS setup", points:15  },
-    { name:"A Level",minimun:" polynomials full and past papers  ",points:20}
+    // { name: "BNA", minimum: "Practice on 1 compitition and leetcode 2 questions and team and physics  ", points:15  },
+    { name: "Electronics", minimum: "Self Balancing Robot and Work " , points:15  },
+    { name: "AI", minimum: "CS50 Lecture#4 Full & Deeplearning and LLMS", points:22  },
+    { name:"A Level",minimun:" partial Fractions full video  ",points:20}
   ];
 
   const getDocsFireStore = async () => {
