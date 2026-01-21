@@ -36,12 +36,12 @@ export default function Page() {
   });
 
   const habbitList = [
-    { name: "Books", minimum: "2 Bussiness chapter ", points:13  },
-    { name: "Admissions", minimum: "Turkish uni and polyu uni", points:25  },
+    { name: "Books", minimum: "2 Bussiness chapter and JTCOE ", points:15  },
+    { name: "Admissions", minimum: "Personal Statement Done! and turkey reserach", points:22  },
     // { name: "BNA", minimum: "Practice on 1 compitition and leetcode 2 questions and team and physics  ", points:15  },
-    { name: "Electronics", minimum: "Self Balancing Robot and Work " , points:15  },
-    { name: "AI", minimum: "CS50 Lecture#4 Full & Deeplearning and LLMS", points:22  },
-    { name:"A Level",minimun:" partial Fractions full video  ",points:20}
+    { name: "Electronics", minimum: "Self Balancing Robot and Work " , points:17  },
+    { name: "AI", minimum: "CS50 Lecture#5 half & Deeplearning and LLMS", points:24  },
+  { name:"A Level",minimun:" Trignometry 2h video ",points:22}
   ];
 
   const getDocsFireStore = async () => {
