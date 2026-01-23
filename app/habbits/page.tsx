@@ -37,11 +37,11 @@ export default function Page() {
 
   const habbitList = [
     { name: "Books", minimum: "2 Bussiness chapter and JTCOE ", points:15  },
-    { name: "Admissions", minimum: "Personal Statement Done! and turkey reserach", points:22  },
+    { name: "Admissions", minimum: "tri-star and us done and italy", points:20  },
     // { name: "BNA", minimum: "Practice on 1 compitition and leetcode 2 questions and team and physics  ", points:15  },
-    { name: "Electronics", minimum: "Self Balancing Robot and Work " , points:17  },
-    { name: "AI", minimum: "CS50 Lecture#5 half & Deeplearning and LLMS", points:24  },
-  { name:"A Level",minimun:" Trignometry 2h video ",points:22}
+    { name: "Electronics", minimum: "Self Balancing Robot and Work " , points:20  },
+    { name: "AI", minimum: "CS50 Lecture#5 full  and practice and Deeplearning computer practice", points:20  },
+  { name:"A Level",minimun:" Trignometry complete and practice",points:25}
   ];
 
   const getDocsFireStore = async () => {
