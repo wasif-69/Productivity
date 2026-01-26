@@ -36,12 +36,12 @@ export default function Page() {
   });
 
   const habbitList = [
-    { name: "Books", minimum: "1 Bussiness chapter and JTCOE complete ", points:13  },
-    { name: "Admissions", minimum: "Italy 3 uni final to apply   and  china research and usa research", points:20  },
+    { name: "Books", minimum: "2 Bussiness chapters ", points:13  },
+    { name: "Admissions", minimum: "polu final and usa research", points:20  },
     // { name: "BNA", minimum: "Practice on 1 compitition and leetcode 2 questions and team and physics  ", points:15  },
-    { name: "Electronics", minimum: " short video upload and book" , points:22  },
-    { name: "AI", minimum: "CS50 Lecture#6 full  and Deeplearning computer practice", points:25  },
-  { name:"A Level",minimun:" Complex Numbers notes and practice ",points:20}
+    { name: "Electronics", minimum: " book and practice" , points:22  },
+    { name: "AI", minimum: "CS50 Lecture#7 half  and Deeplearning and CNN ", points:25  },
+  { name:"A Level",minimun:" Complex Numbers practice ",points:20}
   ];
 
   const getDocsFireStore = async () => {
