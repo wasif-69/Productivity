@@ -39,7 +39,7 @@ export default function Page() {
     { name: "Books", minimum: "2 Bussiness chapters ", points:13  },
     { name: "Admissions", minimum: "polu final and usa research", points:20  },
     // { name: "BNA", minimum: "Practice on 1 compitition and leetcode 2 questions and team and physics  ", points:15  },
-    { name: "Electronics", minimum: " book and practice" , points:22  },
+    { name: "Electronics", minimum: " book and video and practice" , points:22  },
     { name: "AI", minimum: "CS50 Lecture#7 half  and Deeplearning and CNN ", points:25  },
   { name:"A Level",minimun:" Complex Numbers practice ",points:20}
   ];
