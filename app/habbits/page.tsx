@@ -36,6 +36,11 @@ export default function Page() {
     TotalDays: 0,
   });
 
+  const centuries = React.useMemo(() => {
+    return docs.filter(d => d.points >= 100).length;
+  }, [docs]);
+
+
   const habbitList = [
     { name: "Books", minimum: "2 Bussiness chapters ", points: 13 },
     { name: "Admissions", minimum: "polu final and usa research", points: 20 },
@@ -205,6 +210,23 @@ export default function Page() {
               <Line data={lineData} />
             </div>
           </div>
+
+
+          {/* Centuries Section */}
+          <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow text-center">
+            <h2 className="text-2xl font-bold mb-2">
+              💯 Centuries
+            </h2>
+
+            <p className="text-5xl font-extrabold text-green-600">
+              {centuries}
+            </p>
+
+            <p className="text-gray-500 dark:text-gray-400 mt-2">
+              Days with 100+ points
+            </p>
+          </div>
+
 
         </div>
       </div>
