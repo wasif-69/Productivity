@@ -42,12 +42,11 @@ export default function Page() {
 
 
   const habbitList = [
-    { name: "Books", minimum: "2 Bussiness chapters ", points: 13 },
-    { name: "Admissions", minimum: "polu final and usa research", points: 20 },
-    // { name: "BNA", minimum: "Practice on 1 compitition and leetcode 2 questions and team and physics  ", points:15  },
-    { name: "Electronics", minimum: " book and video and practice", points: 22 },
-    { name: "AI", minimum: "CS50 Lecture#7 half  and Deeplearning and CNN ", points: 25 },
-    { name: "A Level", minimum: " Complex Numbers practice ", points: 20 }
+    { name: "Books", minimum: "2 Bussiness chapters ", points: 16 },
+    { name: "Admissions", minimum: "polu final and turkey research", points: 18 },
+    { name: "Electronics", minimum: " transister video & book 15 pages and self balancing robot video ", points: 25 },
+    { name: "AI", minimum: "CS50 Lecture#7 full  and attention metrix (LLM) ", points: 25 },
+    { name: "A Level", minimum: " Complex Numbers final practice  ", points: 19 }
   ];
 
   const getDocsFireStore = async () => {
