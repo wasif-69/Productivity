@@ -42,11 +42,11 @@ export default function Page() {
 
 
   const habbitList = [
-    { name: "Books", minimum: "Psychology 8 chapters", points: 10},
-    { name: "Admissions", minimum: "polu final and usa research", points: 15 },
+    { name: "Books", minimum: "Psychology 8 chapters", points: 20},
+    { name: "Admissions", minimum: "polu final and usa research", points: 7 },
     { name: "Electronics", minimum: " self balancing robot and book capacitor and next and transister video ", points: 30 },
-    { name: "AI", minimum: "CS50 AI full", points: 30 },
-    { name: "A Level", minimum: "Differentiation Past papers 15  and Computer P4", points: 15 }
+    { name: "AI", minimum: "CS50 AI full", points: 13 },
+    { name: "A Level", minimum: "Differentiation Past papers 15  and Computer P4", points: 30 }
   ];
 
   const getDocsFireStore = async () => {
