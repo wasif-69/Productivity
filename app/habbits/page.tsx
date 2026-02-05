@@ -46,7 +46,7 @@ export default function Page() {
     { name: "Admissions", minimum: "turkey research and final ", points: 10 },
     { name: "Electronics", minimum: " transister video edit ", points: 5 },
     { name: "AI", minimum: "CS50 Lecture#9 half", points: 5 },
-    { name: "A Level", minimum: "Integration video ", points: 35 }
+    { name: "A Level", minimum: "Integration video ", points: 35 },
     { name: "AIR NEXUS", minimum: "practice ", points: 35 }
   ];
 
