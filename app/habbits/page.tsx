@@ -43,11 +43,10 @@ export default function Page() {
 
   const habbitList = [
     { name: "Books", minimum: "1 hour study", points: 10},
-    // { name: "Admissions", minimum: "planning more", points: 15 },
-    { name: "Electronics", minimum: " transister video edit and upload and book ", points: 25 },
-    { name: "AI", minimum: "CS50 Lecture#9 half and mongodb and typescript start", points: 25},
-    { name: "Aimate", minimum: "make nextjs one ready", points: 25},
-    { name: "A Level Math", minimum: "Differeintiation Equation and Differentiation ", points: 25 },
+    { name: "Admissions", minimum: "Turkey Universities", points: 15 },
+    { name: "Electronics", minimum: " book print and diode and next video content ", points: 25 },
+    { name: "AI", minimum: "CS50 Lecture#9 half and AI mate", points: 25},
+    { name: "A Level Math", minimum: "vectors video complete ", points: 25 },
   ];
 
   const getDocsFireStore = async () => {
