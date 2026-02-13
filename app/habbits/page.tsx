@@ -42,10 +42,10 @@ export default function Page() {
 
 
   const habbitList = [
-    { name: "Books", minimum: "1 hour study", points: 10},
-    { name: "Admissions", minimum: "Turkey Universities", points: 15 },
-    { name: "Electronics", minimum: " book print and diode and next video record ", points: 25 },
-    { name: "AI", minimum: "CS50 Full and AI mate", points: 25},
+    { name: "Books", minimum: "1 hour study", points: 15},
+    // { name: "Admissions", minimum: "Turkey Universities", points: 15 },
+    { name: "Electronics", minimum: " book print and diode and next video record ", points: 30 },
+    { name: "AI", minimum: "CS50 Full and AI mate", points: 30},
     { name: "A Level Math", minimum: "vectors video complete ", points: 25 },
   ];
 
