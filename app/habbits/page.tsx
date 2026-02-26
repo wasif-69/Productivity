@@ -46,7 +46,7 @@ export default function Page() {
     { name: "Admissions", minimum: "3 italy university final", points: 15},
     { name: "Electronics", minimum: "short video content edit and book", points: 30 },
     { name: "AI", minimum: "LLM new code ", points: 30},
-    { name: "A Level Math", minimum: "S1 practice ", points: 15},
+    { name: "A Level Math", minimum: "S1 part 2 practice  ", points: 15},
   ];
 
   const getDocsFireStore = async () => {
