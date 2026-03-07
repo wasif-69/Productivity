@@ -42,11 +42,11 @@ export default function Page() {
 
 
   const habbitList = [
-    { name: "English", minimum: "Game video and Book 1 h ", points: 20},
+    { name: "English", minimum: "Game video and Book 1 h ", points: 30},
     // { name: "Counselling", minimum: "USM and Planing ", points: 30},
-    { name: "Electronics", minimum: "short video content edit and upload  ", points: 30 },
+    { name: "Electronics", minimum: "short video content edit and upload  ", points: 35 },
     // { name: "AI", minimum: "LLM new code ", points: 40},
-    { name: "A Level Math+ + Physics", minimum: "S1 complete + Physics 2 chapters  ", points: 30},
+    { name: "A Level Math + Physics", minimum: "S1 complete + Physics 3 chapters  ", points: 35},
   ];
 
   const getDocsFireStore = async () => {
