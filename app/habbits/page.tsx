@@ -45,7 +45,7 @@ export default function Page() {
     { name: "English", minimum: "Book 1h and Research", points: 30},
     { name: "Counselling", minimum: "Romania and Chiana ", points: 30},
     { name: "Electronics", minimum: "New content Ready!", points: 15 },
-    { name: "AI", minimum: "LLM new code ", points: 20},
+    { name: "AI", minimum: "LLM new code ", points: 25},
     // { name: "Physics ", minimum: "P4 and P5  ", points: 35},
   ];
 
