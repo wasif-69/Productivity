@@ -42,8 +42,8 @@ export default function Page() {
 
 
   const habbitList = [
-    { name: "English", minimum: "Essay 1h and 1h game", points: 20},
-    { name: "Counselling", minimum: "Romania and Chiana ", points: 30},
+    { name: "English", minimum: "Book 1h and 1h game", points: 30},
+    { name: "Counselling", minimum: "Italy ", points: 20},
     { name: "Electronics", minimum: "New content Ready!", points: 30 },
     // { name: "AI", minimum: "LLM new code ", points: 25},
     { name: "Math ", minimum: "complex numbers ", points: 20},
