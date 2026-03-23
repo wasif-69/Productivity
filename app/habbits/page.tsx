@@ -15,6 +15,7 @@ import {
 } from "chart.js";
 import { Bar, Line } from "react-chartjs-2";
 import { query, orderBy } from "firebase/firestore";
+import ShowHabbit from "@/components/showHabbits";
 
 ChartJS.register(
   CategoryScale,
@@ -42,16 +43,16 @@ export default function Page() {
 
 
   const habbitList = [
-    { name: "English", minimum: "Book 1h and 1h game", points: 30},
-    { name: "Counselling", minimum: "Italy ", points: 20},
-    { name: "Electronics", minimum: "New content Ready!", points: 30 },
-    // { name: "AI", minimum: "LLM new code ", points: 25},
-    { name: "Math ", minimum: "complex numbers ", points: 20},
+    { name: "English", minimum: "Book 1h and 1h game", points: 20},
+    // { name: "Counselling", minimum: "Italy ", points: 20},
+    { name: "Electronics", minimum: "New content Start!", points: 15},
+    { name: "AI", minimum: "LLM Review + Web Dev ", points: 15},
+    { name: "Computer ", minimum: "p3", points: 50},
   ];
 
   const getDocsFireStore = async () => {
     const snapshot = await getDocs(
-      query(collection(db, "Habbit"), orderBy("date", "asc"))
+      query(collection(db, "Point"), orderBy("date", "asc"))
     );
 
     let runningTotal = 0;
@@ -83,7 +84,7 @@ export default function Page() {
   const storePoints = async () => {
     if (points === 0) return alert("Add points first!");
 
-    await addDoc(collection(db, "Habbit"), {
+    await addDoc(collection(db, "Point"), {
       points,
       date: Date.now(),
     });
@@ -170,6 +171,8 @@ export default function Page() {
               </div>
             ))}
           </div>
+
+          {/* <ShowHabbit/> */}
 
           {/* Store */}
           <button
