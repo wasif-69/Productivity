@@ -43,11 +43,11 @@ export default function Page() {
 
 
   const habbitList = [
-    { name: "English", minimum: "Book 1h and 1h game", points: 20},
-    // { name: "Counselling", minimum: "Italy ", points: 20},
-    { name: "Electronics", minimum: "New content Start!", points: 15},
-    { name: "AI", minimum: "LLM Review + Web Dev ", points: 15},
-    { name: "Computer ", minimum: "p3", points: 50},
+    { name: "English", minimum: "Book 1h", points: 25},
+    { name: "Research", minimum: "English + Unies ", points: 20},
+    { name: "Electronics", minimum: "New content Start!", points: 30},
+    { name: "Expedation", minimum: "2 books", points: 25},
+    // { name: "Phsics ", minimum: "p5", points: 54},
   ];
 
   const getDocsFireStore = async () => {
@@ -172,7 +172,7 @@ export default function Page() {
             ))}
           </div>
 
-          {/* <ShowHabbit/> */}
+          <ShowHabbit/>
 
           {/* Store */}
           <button
