@@ -42,13 +42,7 @@ export default function Page() {
   }, [docs]);
 
 
-  const habbitList = [
-    { name: "English", minimum: "Book 1h", points: 25},
-    { name: "Research", minimum: "English + Unies ", points: 20},
-    { name: "Electronics", minimum: "New content Start!", points: 30},
-    { name: "Expedation", minimum: "2 books", points: 25},
-    // { name: "Phsics ", minimum: "p5", points: 54},
-  ];
+
 
   const getDocsFireStore = async () => {
     const snapshot = await getDocs(

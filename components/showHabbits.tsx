@@ -129,22 +129,89 @@ const ShowHabbit = () => {
   }
 
   return (
-    <div className="bg-white h-full w-full text-black">
-      <div className="bg-amber-300 p-5 border-amber-600 border-2 font-bold" >Total Points: {points}</div>
-      {Habbit.map((val, key) => (
-        <div key={key} className="text-black w-1/6 bg-orange-400 flex gap-50 p-1 ">
-          <input value={val.habbit} name={val.id} onChange={(e) => { ChangeHabbit(val.id, e.target.value) }} />
-          <input value={val.points} name={val.id} onChange={(e) => { ChangePoints(val.id, e.target.value) }} />
-          <button className="" onClick={()=>{setpoints(points+Number(val.points))}} >Add</button>
-          <button onClick={()=>{DeleteDocs(val.id)}} >Delete</button>
+    <div className="bg-white p-6 rounded-2xl shadow-lg border-2 border-blue-500">
+  
+      {/* Header */}
+      <div className="flex justify-between items-center mb-6">
+        <h2 className="text-2xl font-bold text-blue-600">
+          Habits
+        </h2>
+  
+        <div className="bg-yellow-400 text-black px-5 py-2 rounded-lg font-bold border-2 border-blue-500">
+          Points: {points}
         </div>
-      ))}
-      <button className="bg-amber-300 p-5 border-amber-600 border-2 font-bold" onClick={() => { AddHabbit() }}>Add Habbit</button>
-      <button className="bg-amber-300 p-5 border-amber-600 border-2 font-bold" onClick={() => { saveHabbit() }}>Save</button>
-      
-      <button className="bg-amber-300 p-5 border-amber-600 border-2 font-bold" onClick={()=>{StorePoints()}} >Store Points</button>
+      </div>
+  
+      {/* Habits List */}
+      <div className="space-y-4">
+  
+        {Habbit.map((val) => (
+          <div
+            key={val.id}
+            className="flex text-black flex-col md:flex-row items-center gap-3 p-4 border-2 border-blue-500 rounded-xl"
+          >
+            {/* Habit Name */}
+            <input
+              className="flex-1 p-2 border-2 border-blue-400 rounded-lg focus:outline-none"
+              value={val.habbit}
+              onChange={(e) => ChangeHabbit(val.id, e.target.value)}
+            />
+  
+            {/* Points */}
+            <input
+              type="number"
+              className="w-24 p-2 border-2 border-yellow-400 rounded-lg focus:outline-none"
+              value={val.points}
+              onChange={(e) => ChangePoints(val.id, e.target.value)}
+            />
+  
+            {/* Add */}
+            <button
+              onClick={() => setpoints(points + Number(val.points))}
+              className="bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold"
+            >
+              Add
+            </button>
+  
+            {/* Delete */}
+            <button
+              onClick={() => DeleteDocs(val.id)}
+              className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-semibold border-2 border-blue-500"
+            >
+              Delete
+            </button>
+          </div>
+        ))}
+  
+      </div>
+  
+      {/* Actions */}
+      <div className="flex flex-wrap gap-4 mt-6">
+  
+        <button
+          onClick={AddHabbit}
+          className="bg-blue-500 text-white px-6 py-3 rounded-lg font-bold"
+        >
+          Add Habit
+        </button>
+  
+        <button
+          onClick={saveHabbit}
+          className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-bold border-2 border-blue-500"
+        >
+          Save
+        </button>
+  
+        <button
+          onClick={StorePoints}
+          className="bg-blue-500 text-white px-6 py-3 rounded-lg font-bold"
+        >
+          Store Points
+        </button>
+  
+      </div>
     </div>
-  )
+  );
 }
 
 export default ShowHabbit
