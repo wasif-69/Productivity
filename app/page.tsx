@@ -1,9 +1,8 @@
 "use client";
 import ShowHabbit from "@/components/showHabbits";
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { db } from "@/Firebase/firebaseconfiq";
-import { addDoc, collection, getDocs } from "firebase/firestore";
+import {  collection, getDocs } from "firebase/firestore";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -16,7 +15,7 @@ import {
 } from "chart.js";
 import { Bar, Line } from "react-chartjs-2";
 import { query, orderBy } from "firebase/firestore";
-import { Stats } from "fs";
+
 
 ChartJS.register(
   CategoryScale,
@@ -28,11 +27,16 @@ ChartJS.register(
   Legend
 );
 
+interface HabbitType {
+  id: string,
+  cumulative: number,
+  points: number
+}
+
 export default function Home() {
 
-  const [docs, setDocs] = useState<any[]>([]);
-    const [points, setPoints] = useState(0);
-    const [dark, setDark] = useState(false);
+  const [docs, setDocs] = useState<HabbitType[]>([]);
+
   
     const [total, setTotal] = useState({
       PointsTotal: 0,
@@ -57,8 +61,8 @@ export default function Home() {
   
       const data = snapshot.docs.map((doc) => {
         const d = doc.data();
-        sum += d.points ?? 0;
-        runningTotal += d.points ?? 0;
+        sum += Number(d.points) ?? 0;
+        runningTotal += Number(d.points) ?? 0;
   
         return {
           id: doc.id,
