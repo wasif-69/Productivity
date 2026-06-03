@@ -1,6 +1,6 @@
 "use client"
 import { db } from "@/Firebase/firebaseconfiq";
-import { addDoc, collection, deleteDoc, doc, getDoc, getDocs, updateDoc } from "firebase/firestore";
+import { addDoc, collection, deleteDoc, doc, getDocs, updateDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import {toast} from "react-toastify"
 
@@ -113,6 +113,7 @@ const ShowHabbit = () => {
       points:points,
       date:Date.now()
     })
+    setpoints(0)
     toast.success("Points Added")
   }
 

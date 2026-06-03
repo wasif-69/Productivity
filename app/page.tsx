@@ -51,36 +51,40 @@ export default function Home() {
   
   
   
-    const getDocsFireStore = async () => {
-      const snapshot = await getDocs(
-        query(collection(db, "Point"), orderBy("date", "asc"))
-      );
+    
   
-      let runningTotal = 0;
-      let sum = 0;
-  
-      const data = snapshot.docs.map((doc) => {
-        const d = doc.data();
-        sum += Number(d.points) ?? 0;
-        runningTotal += Number(d.points) ?? 0;
-  
-        return {
-          id: doc.id,
-          points: d.points,
-          cumulative: runningTotal,
-        };
-      });
-  
-      setDocs(data);
-      setTotal({
-        PointsTotal: sum,
-        TotalDays: data.length,
-      });
-    };
-  
-    useEffect(() => {
-      getDocsFireStore();
-    }, []);
+    useEffect(()=>{
+
+      const getDocsFireStore = async () => {
+        const snapshot = await getDocs(
+          query(collection(db, "Point"), orderBy("date", "asc"))
+        );
+    
+        let runningTotal = 0;
+        let sum = 0;
+    
+        const data = snapshot.docs.map((doc) => {
+          const d = doc.data();
+          sum += Number(d.points) ?? 0;
+          runningTotal += Number(d.points) ?? 0;
+    
+          return {
+            id: doc.id,
+            points: d.points,
+            cumulative: runningTotal,
+          };
+        });
+    
+        setDocs(data);
+        setTotal({
+          PointsTotal: sum,
+          TotalDays: data.length,
+        });
+      };
+
+      getDocsFireStore()
+
+    },[docs])
 
     const barData = {
       labels: docs.map((_, i) => `Day ${i + 1}`),
@@ -191,11 +195,3 @@ export default function Home() {
     );
 }
 
-function Stat({ title, value }: { title: string; value: number }) {
-  return (
-    <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow">
-      <p className="text-gray-500 dark:text-gray-400">{title}</p>
-      <p className="text-3xl font-bold">{value}</p>
-    </div>
-  );
-}
